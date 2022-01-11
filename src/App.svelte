@@ -1,25 +1,40 @@
 <script>
+	import Router from "svelte-spa-router";
+    import About from "./routes/About.svelte";
+	import Contact from "./routes/Contact.svelte";
+	import Home from "./routes/Home.svelte";
 	export let name;
+
+	let routes = {
+		"/": Home,
+		"/about": About,
+		"/contact": Contact,
+	}
+
 </script>
 
+<div class="bg-gray-900">
+	<nav class="p-4 text-white">
+		<a href="#/">Home</a>
+		<a href="#/about">About</a>
+		<a href="#/contact">Contact</a>
+	</nav>
+</div>
+
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+		<Router {routes} />
 </main>
 
-<style>
+<style lang="postcss" global>
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+
 	main {
 		text-align: center;
 		padding: 1em;
 		max-width: 240px;
 		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
 	}
 
 	@media (min-width: 640px) {
