@@ -1,3 +1,7 @@
+:root{
+    --mainBg: #F5DF4E;
+}
+
 body{
-    background-color: orange;
+    background-color: var(--mainBg);
 }

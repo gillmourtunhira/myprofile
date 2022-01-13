@@ -2,26 +2,26 @@
 	import Router from "svelte-spa-router";
     import About from "./routes/About.svelte";
 	import Contact from "./routes/Contact.svelte";
-	import Home from "./routes/Home.svelte";
-	export let name;
+	import Skills from "./routes/Skills.svelte";
+	import Work from "./routes/Work.svelte";
 
 	let routes = {
-		"/": Home,
 		"/about": About,
+		"/skills": Skills,
+		"/work": Work,
 		"/contact": Contact,
 	}
 
 </script>
 
-<div class="bg-gray-900">
-	<nav class="p-4 text-white">
-		<a href="#/">Home</a>
-		<a href="#/about">About</a>
+<div class="flex justify-between pt-8 w-5/6 m-auto">
+	<div class="logo text-4xl uppercase font-bold">Gillmour.</div>
+	<nav class="p-4 text-black text-xl">
+		<a href="#/about">About Me <span>//</span></a>
+		<a href="#/skills">What I Do <span>//</span></a>
+		<a href="#/work">My Work <span>//</span></a>
 		<a href="#/contact">Contact</a>
 	</nav>
-	<div class="wrapper">
-
-	</div>
 </div>
 
 <main>
