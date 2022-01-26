@@ -1,7 +1,9 @@
 :root{
     --mainBg: #F5DF4E;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: var(--mainBg);
 }
