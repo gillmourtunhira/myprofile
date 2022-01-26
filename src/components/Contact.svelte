@@ -27,15 +27,15 @@
 					<div>
 						<h3 class="text-3xl font-bold my-6">Estimate your Project?</h3>
 						<div>
-							<form action="#">
+							<form action="mail.php" method="POST">
 								<div class="flex flex-col gap-6">
 									<div>
 										<label for="name" class="text-lg">Name</label>
-										<input type="text" name="name" class="w-full bg-transparent border-b border-black outline-none">
+										<input type="text" name="name" required class="w-full bg-transparent border-b border-black outline-none">
 									</div>
 									<div>
 										<label for="email" class="text-lg">Email</label>
-										<input type="email" name="email" class="w-full bg-transparent border-b border-black outline-none">
+										<input type="email" name="email" required class="w-full bg-transparent border-b border-black outline-none">
 									</div>
 									<div class="flex flex-col">
 										<label for="message" class="text-lg">How can I help you</label>

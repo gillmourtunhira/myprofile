@@ -1,6 +1,6 @@
 <section>
 	<div class="flex justify-between pt-8 w-5/6 m-auto">
-		<div class="logo text-4xl uppercase font-bold">Gillmour.</div>
+		<div class="logo text-4xl uppercase font-bold"><a href="/">Gillmour.</a></div>
 		<div class="mobile__nav lg:hidden">
 			<div class="space-y-2">
 				<span class="block w-5 h-0.5 bg-black"></span>
