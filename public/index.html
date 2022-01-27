@@ -11,8 +11,28 @@
 	<link rel='stylesheet' href='/build/bundle.css'>
 
 	<script defer src='/build/bundle.js'></script>
+
 </head>
 
 <body>
+
+	<div class="relative hidden show__button">
+		<button class="p-2 m-2 w-[60px] h-[60px] flex justify-center items-center bg-slate-600 active:bg-yellow-300 rounded-full fixed bottom-0 right-0 shadow-2xl" id="btnScrollTop">
+			<i class="material-icons text-white">arrow_upward</i>
+		</button>
+	</div>
+
+	<script>
+		window.addEventListener('scroll', function(){
+			const scrollClass = document.querySelector('.show__button');
+
+			scrollClass.classList.toggle( 'hidden', window.scrollY < 800 )
+		});
+
+		const scrollUp = document.querySelector('#btnScrollTop');
+		scrollUp.addEventListener( 'click', () => {
+			window.scroll(0, 0);
+		} );
+	</script>
 </body>
 </html>

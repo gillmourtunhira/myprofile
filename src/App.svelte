@@ -1,3 +1,6 @@
+<svelte:head>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</svelte:head>
 <script>
 	// Routes
 	// import Router from "svelte-spa-router";
@@ -49,6 +52,8 @@
 	@tailwind base;
 	@tailwind components;
 	@tailwind utilities;
+
+	
 
 	@media (max-width: 768px){
 		.main__nav{
